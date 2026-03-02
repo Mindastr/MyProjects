@@ -1,0 +1,10 @@
+# Python project dependencies
+# Install with: pip install -r requirements.txt
+# Update with: pip freeze > requirements.txt
+
+# Add your dependencies here
+# Example:
+# numpy==1.21.0
+# pandas==1.3.0
+# requests==2.26.0
+

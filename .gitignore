@@ -1,0 +1,87 @@
+# ========== C++ SPECIFIC ==========
+# Build directories
+cmake-build-debug/
+cmake-build-release/
+cmake-build-*/
+build/
+dist/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+compile_commands.json
+
+# Compiled files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+# ========== PYTHON SPECIFIC ==========
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# pip
+*.egg-info/
+dist/
+build/
+*.egg
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyCharm
+.idea/
+
+# ========== IDE AND EDITOR ==========
+# CLion / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.user
+
+# Vim/Nano
+*.swp
+*.swo
+*~
+.*.swp
+
+# ========== OPERATING SYSTEM ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========== MISC ==========
+.env
+.env.local
+*.log
+*.txt.log
+node_modules/
+
