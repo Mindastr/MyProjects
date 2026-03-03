@@ -1,105 +1,42 @@
-# ========== C++ SPECIFIC ==========
-# Build directories
-cmake-build-debug/
-cmake-build-release/
-cmake-build-*/
-build/
-dist/
-out/
+# ========== ГЛАВНОЕ: ЗАГРУЖАЕМ ТОЛЬКО assignments/ ==========
+# Исключаем всё в корне кроме нужных файлов
+/*
+!/assignments/
+!.gitignore
+!.gitattributes
+!.github
 
-# CMake files
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-*.cmake
-compile_commands.json
+# ========== ИСКЛЮЧЕНИЯ ВНУТРИ assignments/ ==========
+# IDE конфиги
+assignments/**/.idea/
+assignments/**/.vscode/
+assignments/**/*.iml
 
-# Compiled files
-*.o
-*.obj
-*.a
-*.lib
-*.so
-*.dll
-*.exe
-*.pdb
-*.ilk
-*.exp
+# Артефакты сборки C++
+assignments/**/build/
+assignments/**/cmake-build-*/
+assignments/**/CMakeCache.txt
+assignments/**/CMakeFiles/
+assignments/**/*.o
+assignments/**/*.obj
+assignments/**/*.a
+assignments/**/*.lib
+assignments/**/*.exe
+assignments/**/*.out
 
-# ========== PYTHON SPECIFIC ==========
-# Virtual environments
-venv/
-env/
-ENV/
-.venv/
-venv*/
+# Python виртуальные окружения и кеш
+assignments/**/.venv/
+assignments/**/venv/
+assignments/**/__pycache__/
+assignments/**/*.pyc
+assignments/**/*.pyo
+assignments/**/*.egg-info/
 
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
+# ОС файлы
+assignments/**/.DS_Store
+assignments/**/Thumbs.db
+assignments/**/desktop.ini
 
-# pip
-*.egg-info/
-dist/
-build/
-*.egg
-.eggs/
-
-# pytest
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.coverage.*
-
-# ========== IDE AND EDITOR ==========
-# JetBrains (CLion, PyCharm, IntelliJ)
-.idea/
-*.iml
-*.iws
-*.ipr
-*.iml.bak
-
-# VS Code
-.vscode/
-*.code-workspace
-
-# Visual Studio
-.vs/
-*.sln
-*.vcxproj
-*.vcxproj.user
-*.vcxproj.filters
-
-# Vim/Nano
-*.swp
-*.swo
-*~
-.*.swp
-.*.tmp
-
-# Sublime
-*.sublime-project
-*.sublime-workspace
-
-# ========== OPERATING SYSTEM ==========
-.DS_Store
-Thumbs.db
-desktop.ini
-.AppleDouble
-.LSOverride
-
-# ========== MISC ==========
-.env
-.env.local
-.env.*.local
-*.log
-*.log.*
-*.pid
-*.seed
-node_modules/
-.vscode-extensions/
+# Логи
+assignments/**/*.log
 
