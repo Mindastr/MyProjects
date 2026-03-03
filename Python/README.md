@@ -1,185 +1,156 @@
-# 🐍 Python Projects
+# 📚 Python Projects - Learning Journey
 
-Python часть репозитория MyProjects.
+Мои Python проекты организованы **по датам обучения**.
 
-## 📁 Структура
+Каждый день - новая папка с разными проектами!
+
+## 📅 Проекты по датам
+
+### 📌 2026-03-02 (День 1)
+
+**Папка:** `2026-03-02/`
+
+Проекты в этот день:
+- `learning/` - Python basics
+
+**Как запустить:**
+```bash
+cd 2026-03-02/learning
+python -m venv venv
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Linux/Mac
+pip install -r requirements.txt
+python src/main.py
+```
+
+**Подробнее:** Смотрите `2026-03-02/README.md`
+
+---
+
+## 🎯 Структура проекта
+
+Каждый день - это папка с датой (YYYY-MM-DD):
 
 ```
 Python/
-├── src/                    ← Ваши .py файлы СЮДА
-├── tests/                  ← Тесты
-├── requirements.txt        ← Зависимости
-├── README.md
-└── .gitignore
-```
-
-## 🚀 Быстрый старт
-
-### 1. Создайте виртуальное окружение
-
-**Windows:**
-```bash
-cd Python
-python -m venv venv
-venv\Scripts\activate
-```
-
-**Linux/Mac:**
-```bash
-cd Python
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 2. Установите зависимости
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Запустите проект
-
-```bash
-python src/main.py
-```
-
-## 📝 Как добавить новый файл
-
-### Пример: Создаём калькулятор
-
-**Шаг 1:** Создайте `src/calculator.py`
-```python
-def add(a, b):
-    """Складывает два числа"""
-    return a + b
-
-def subtract(a, b):
-    """Вычитает два числа"""
-    return a - b
-```
-
-**Шаг 2:** Используйте в `src/main.py`
-```python
-from calculator import add, subtract
-
-result1 = add(5, 3)
-result2 = subtract(5, 3)
-
-print(f"5 + 3 = {result1}")
-print(f"5 - 3 = {result2}")
-```
-
-**Шаг 3:** Запустите
-```bash
-python src/main.py
-```
-
-## 📦 Зависимости
-
-Список всех используемых библиотек лежит в `requirements.txt`.
-
-### Добавить новую зависимость
-
-```bash
-# Установите пакет
-pip install numpy
-
-# Обновите requirements.txt
-pip freeze > requirements.txt
-
-# Коммитьте изменения
-git add requirements.txt
-git commit -m "feat(python): add numpy dependency"
-git push
-```
-
-## 🔧 PyCharm Настройка
-
-### Выбрать интерпретатор
-
-1. File → Settings (Ctrl+Alt+S)
-2. Project: MyProjects → Python Interpreter
-3. Выберите интерпретатор из папки `venv/`
-
-### Запуск скрипта
-
-- Нажмите **Shift+F10** или кнопку запуска
-- Или правый клик на файл → Run
-
-### Debug
-
-- Нажмите **Shift+F9** для отладки
-- Или правый клик → Debug
-
-## 📤 Отправить на GitHub
-
-### Новый файл или изменения
-
-```bash
-git add Python/
-git commit -m "feat(python): описание что вы добавили"
-git push
-```
-
-### Если добавили новый пакет
-
-```bash
-pip freeze > Python/requirements.txt
-git add Python/requirements.txt
-git commit -m "feat(python): add new dependency"
-git push
-```
-
-## ❌ НЕ ДЕЛАЙТЕ
-
-- ❌ Не коммитьте папку `venv/`
-- ❌ Не коммитьте папку `__pycache__/`
-- ❌ Не коммитьте `.idea/`
-
-Это уже в `.gitignore` - Git их не заметит.
-
-## ✅ Чек-лист перед push
-
-```bash
-# 1. Проверьте статус
-git status
-
-# 2. Убедитесь что нет:
-# ❌ venv/
-# ❌ __pycache__/
-# ❌ .idea/
-# ❌ *.pyc
-
-# 3. Если всё ОК:
-git add Python/
-git commit -m "feat(python): описание"
-git push
-```
-
-## 🆘 Проблемы
-
-### "ModuleNotFoundError: No module named..."
-
-Решение:
-```bash
-# Проверьте что виртуальное окружение активировано
-# Если нет - активируйте:
-venv\Scripts\activate  # Windows
-source venv/bin/activate  # Linux/Mac
-
-# Переустановите зависимости:
-pip install -r requirements.txt
-```
-
-### "python: command not found"
-
-Решение:
-```bash
-# Используйте python3 вместо python
-python3 src/main.py
+├── 2026-03-02/          ← День 1
+│   ├── learning/
+│   │   ├── src/
+│   │   ├── requirements.txt
+│   │   └── README.md (если нужен)
+│   └── README.md
+│
+├── 2026-03-03/          ← День 2
+│   ├── parser/
+│   │   ├── src/
+│   │   ├── requirements.txt
+│   │   └── README.md (если нужен)
+│   └── README.md
+│
+└── README.md            ← Этот файл
 ```
 
 ---
 
-Для полного гайда смотрите `PYTHON_GUIDE.md`
+## 🚀 Как добавить новый проект?
+
+### Новый проект в текущий день
+
+```bash
+cd Python\2026-03-02
+
+# Создаёете папку для проекта
+mkdir my-new-project\src
+
+# Копируете requirements.txt от другого проекта
+copy learning\requirements.txt my-new-project\requirements.txt
+
+# Пишете код в src/main.py
+```
+
+### Новый день (новый набор проектов)
+
+```bash
+cd Python
+
+# Создаёете папку с датой (YYYY-MM-DD)
+mkdir 2026-03-03\project1\src
+mkdir 2026-03-03\project2\src
+
+# Создаёете requirements.txt для каждого проекта
+# Создаёете README.md для дня
+```
+
+---
+
+## 📖 Быстрая инструкция
+
+### Запустить проект
+
+```bash
+cd Python\2026-03-02\learning
+
+# Создаём виртуальное окружение
+python -m venv venv
+
+# Активируем его
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Linux/Mac
+
+# Устанавливаем зависимости
+pip install -r requirements.txt
+
+# Запускаем
+python src/main.py
+```
+
+### Добавить новый пакет
+
+```bash
+# Активируем venv
+venv\Scripts\activate
+
+# Устанавливаем пакет
+pip install numpy
+
+# Обновляем requirements.txt
+pip freeze > requirements.txt
+```
+
+### Отправить на GitHub
+
+```bash
+cd C:\MyProjects
+git add .
+git commit -m "feat(python): добавил новые проекты в 2026-03-03"
+git push
+```
+
+---
+
+## 💡 Почему такая структура?
+
+✅ **По датам** - видно когда вы что учили
+✅ **Проекты в папках** - легко найти нужный
+✅ **Каждый проект независим** - свой venv и requirements.txt
+✅ **На GitHub красиво** - видна прогресс обучения
+✅ **Легко расширять** - просто добавляете новые дни
+
+---
+
+## 🎓 Как использовать
+
+1. **Смотрите по датам** - какие проекты в какой день
+2. **Переходите в папку дня** - `cd 2026-03-02`
+3. **Выбираете проект** - `cd learning`
+4. **Создаёете venv** - `python -m venv venv`
+5. **Активируете** - `venv\Scripts\activate`
+6. **Устанавливаете** - `pip install -r requirements.txt`
+7. **Запускаете** - `python src/main.py`
+
+---
+
+**Ваш путь обучения видна на GitHub!** 🚀
+
+Последнее обновление: 2026-03-03
 
