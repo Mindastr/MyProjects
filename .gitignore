@@ -5,6 +5,7 @@ cmake-build-release/
 cmake-build-*/
 build/
 dist/
+out/
 
 # CMake files
 CMakeCache.txt
@@ -22,6 +23,9 @@ compile_commands.json
 *.so
 *.dll
 *.exe
+*.pdb
+*.ilk
+*.exp
 
 # ========== PYTHON SPECIFIC ==========
 # Virtual environments
@@ -29,6 +33,7 @@ venv/
 env/
 ENV/
 .venv/
+venv*/
 
 # Python cache
 __pycache__/
@@ -41,21 +46,22 @@ __pycache__/
 dist/
 build/
 *.egg
+.eggs/
 
 # pytest
 .pytest_cache/
 .coverage
 htmlcov/
-
-# PyCharm
-.idea/
+.tox/
+.coverage.*
 
 # ========== IDE AND EDITOR ==========
-# CLion / IntelliJ
+# JetBrains (CLion, PyCharm, IntelliJ)
 .idea/
 *.iml
 *.iws
 *.ipr
+*.iml.bak
 
 # VS Code
 .vscode/
@@ -66,22 +72,34 @@ htmlcov/
 *.sln
 *.vcxproj
 *.vcxproj.user
+*.vcxproj.filters
 
 # Vim/Nano
 *.swp
 *.swo
 *~
 .*.swp
+.*.tmp
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
 
 # ========== OPERATING SYSTEM ==========
 .DS_Store
 Thumbs.db
 desktop.ini
+.AppleDouble
+.LSOverride
 
 # ========== MISC ==========
 .env
 .env.local
+.env.*.local
 *.log
-*.txt.log
+*.log.*
+*.pid
+*.seed
 node_modules/
+.vscode-extensions/
 

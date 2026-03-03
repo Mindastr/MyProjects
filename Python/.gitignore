@@ -1,10 +1,11 @@
-# Python virtual environment
+# Virtual environments
 venv/
 env/
 ENV/
 .venv/
+venv*/
 
-# Python cache
+# Python cache and bytecode
 __pycache__/
 *.py[cod]
 *$py.class
@@ -15,16 +16,22 @@ __pycache__/
 dist/
 build/
 *.egg
+.eggs/
 
 # pytest
 .pytest_cache/
 .coverage
 htmlcov/
+.tox/
+.coverage.*
+.hypothesis/
 
 # IDE
 .idea/
 .vscode/
 *.swp
+*.swo
+*~
 
 # OS
 .DS_Store
@@ -33,4 +40,6 @@ Thumbs.db
 # Misc
 .env
 *.log
+
+
 
